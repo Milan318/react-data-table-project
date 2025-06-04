@@ -20,7 +20,7 @@ function Header() {
               <Link className="nav-link active" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/data">Data</Link>
+              <Link className="nav-link" to="/data">User Data</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">

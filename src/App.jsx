@@ -34,10 +34,10 @@ function App() {
     e.preventDefault();
     if (editId === "") {
       await axios.post(URL, { ...user, id: String(Date.now()) });
-      toast.success("User added Successfully!", {});
+      toast.success("User Data Added!", {});
     } else {
       let res = await axios.put(`${URL}/${editId}`, { ...user });
-      toast.info("User Updated Successfully!", {});
+      toast.info("User Data Updated!", {});
     }
     handleFetch();
     setEditId("");
@@ -47,7 +47,7 @@ function App() {
 
   const handleDelete = async (id) => {
     await axios.delete(`${URL}/${id}`);
-    toast.warn("User Deleted Successfully!", {});
+    toast.warn("User Data Deleted!", {});
 
     handleFetch();
   };
@@ -62,19 +62,6 @@ function App() {
 
   return (
     <>
-      {/* <Header />
-      <Form
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-        user={user}
-      />
-      <Table
-        users={users}
-        setUsers={setUsers}
-        handleDelete={handleDelete}
-        handleEdit={handleEdit}
-      />
-     */}
       <Header />
 
       <Routes>
