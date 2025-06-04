@@ -1,3 +1,9 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "1749029694231",
+      "email": "taluxupizu@mailinator.com",
+      "password": "Pa$$w0rd!"
+    }
+  ]
 }
